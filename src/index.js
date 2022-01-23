@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactExampleRef from "./components/04-useRef/ReactExampleRef";
+import { MainApp } from "./components/09-useContext/MainApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReactExampleRef />
+    <MainApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// import "./components/08-useReducer/intro-reducer";

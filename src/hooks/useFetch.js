@@ -32,7 +32,14 @@ export default function useFetch(url) {
             loading: false,
             error: null,
           })
-      );
+      )
+      .catch(() => {
+        setState({
+          data: null,
+          loading: false,
+          error: "Something went wrong",
+        });
+      });
   }, [url]);
 
   return state;

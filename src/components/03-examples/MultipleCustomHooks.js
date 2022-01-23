@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch";
 import "./examples.css";
 
 export default function MultipleCustomHooks() {
-  const { state: counter, increment } = useCounter(1);
+  const { counter, increment } = useCounter(1);
 
   const { data, error, loading } = useFetch(
     `https://www.breakingbadapi.com/api/quotes/${counter}`
